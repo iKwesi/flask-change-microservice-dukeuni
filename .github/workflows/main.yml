@@ -18,3 +18,9 @@ jobs:
     - name: Test
       run: |
         make test
+    - name: Docker Build
+      run: | 
+        make build
+    - name: Docker run
+      run: |
+        make run
