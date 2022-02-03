@@ -6,9 +6,9 @@ spec:
   selector:
     app: hello-python
   ports:
-  - protocol: "TCP"
-    port: 8080
-    targetPort: 8080
+    - protocol: "TCP"
+      port: 8080
+      targetPort: 8080
   type: LoadBalancer
 
 ---
@@ -27,8 +27,8 @@ spec:
         app: hello-python
     spec:
       containers:
-      - name: flask-change
-        image: flask-change:latest
-        imagePullPolicy: Never
-        ports:
-        - containerPort: 8080
+        - name: flask-change
+          image: flask-change:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
