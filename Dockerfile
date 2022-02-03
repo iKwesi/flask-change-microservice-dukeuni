@@ -11,7 +11,8 @@ COPY . app.py /app/
 RUN pip install --no-cache-dir --upgrade pip &&\
     pip install --no-cache-dir --trusted-host pypi.python.org -r requirements.txt
 
-EXPOSE 8080
+EXPOSE 3030 
+#8080
 
 ENTRYPOINT [ "python" ]
 
