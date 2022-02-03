@@ -13,10 +13,10 @@ build:
 	docker build -t flask-change:latest .
 
 run:
-	docker run -p 3030:3030 flask-change
+	docker run -p 5000:5000 flask-change
 
 invoke:
-	curl http://127.0.0.1:8080/change/1/34
+	curl http://172.17.0.2:8080/change/1/34
 
 run-kube:
 	kubectl apply -f kube-hello-change.yaml
