@@ -16,7 +16,7 @@ run:
 	docker run -p 3030:3030 flask-change
 
 invoke:
-	curl http://127.0.0.1:8080/change/1/34
+	curl http://127.0.0.1:3030/change/1/34
 
 run-kube:
 	kubectl apply -f kube-hello-change.yaml
