@@ -21,6 +21,4 @@ jobs:
     - name: Docker Build
       run: | 
         make build
-    - name: Docker run
-      run: |
-        make run
+
